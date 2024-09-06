@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Font Valorant menggunakan Tungsten untuk heading dan DIN Next LT Pro untuk body text */
+  --font-heading: 'Playfair', Display, Playfair;
+  --font-body: 'Poppins', sans-serif;
+  
+  @layer base {
+    body {
+      @apply font-poppins;
+    }
+  
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-playfair;
+    }
+  }
+
+
+  /* Warna-warna khas Valorant */
+  --color-red: #22C55E;
+  --color-dark: #157437;
+  --color-light: #ece8e1;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Atur font default */
+body {
+  line-height: 1.5;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+/* Atur padding top navbar */
+.pt-navbar {
+  padding-top: 64px; /* Sesuaikan dengan tinggi navbar Anda */
+}

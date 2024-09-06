@@ -1,0 +1,22 @@
+import React from 'react';
+import Hero from '../../components/landing/Hero';
+import Features from '../../components/landing/Features';
+import Testimonials from '../../components/landing/Testimonials';
+import Kamar from '../Kamar';
+import Fasilitas from '../Fasilitas';
+import Kontak from '../Kontak';
+
+const Home: React.FC = () => {
+  return (
+    <div className="-mt-16"> {/* Menghapus padding top untuk halaman home */}
+      <Hero />
+      <Features />
+      <Testimonials />
+      <Kamar />
+      <Fasilitas />
+      <Kontak />
+    </div>
+  );
+};
+
+export default Home;
