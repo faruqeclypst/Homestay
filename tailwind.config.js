@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'brown': '#E9E1D6', // Menambahkan warna kustom
+      },
+
       fontFamily: {
         'playfair': ['"Playfair Display"', 'serif'],
         'poppins': ['Poppins', 'sans-serif'],

@@ -2,9 +2,11 @@ import React from 'react';
 import Hero from '../../components/landing/Hero';
 import Features from '../../components/landing/Features';
 import Testimonials from '../../components/landing/Testimonials';
-import Kamar from '../Kamar';
-import Fasilitas from '../Fasilitas';
-import Kontak from '../Kontak';
+import Kamar from '../../pages/landing/Kamar';
+import Fasilitas from '../../pages/landing/Fasilitas';
+import Kontak from '../../pages/landing/Kontak';
+
+
 
 const Home: React.FC = () => {
   return (

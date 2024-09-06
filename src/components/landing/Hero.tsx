@@ -1,7 +1,10 @@
 import React from 'react';
+import useWhatsAppLink from '../../hooks/useWhatsAppLink';
+import Button from '../common/Button';
 
 // Hero component
 const Hero: React.FC = () => {
+  const openWhatsApp = useWhatsAppLink();
   return (
     <div className="relative bg-gray-900 text-white py-20 flex items-center justify-center min-h-screen">
     {/* Gambar latar belakang */}
@@ -19,11 +22,12 @@ const Hero: React.FC = () => {
       <p className="text-xl mb-8 max-w-2xl">
         Your Cozy Retreat in Takengon
       </p>
-      <button className="bg-green-500 hover:bg-green-600 font-poppins px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
-        Book Now
-      </button>
+      <Button onClick={() => openWhatsApp('Assalamualaikum, Saya tertarik untuk booking Aiza Homestay!')}>
+      Hubungi Kami
+    </Button>
     </div>
   </div>
+  
   
   );
 };

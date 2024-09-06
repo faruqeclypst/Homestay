@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://{faruqeclypst}.github.io/{Homestay}"
+    "homepage": "https://faruqeclypst.github.io/Homestay"
   },
   "dependencies": {
     "react": "^18.3.1",
