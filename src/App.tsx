@@ -3,10 +3,9 @@ import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/common/ScrollToTop';
 import LandingLayout from './layouts/LandingLayout';
-import Home from './pages/landing/Home';
-import Kamar from './pages/landing/Kamar';
-import Fasilitas from './pages/landing/Fasilitas';
-import Kontak from './pages/landing/Kontak';
+import Dashboard from './pages/admin/Dashboard';
+import Settings from './pages/admin/Settings';
+import Messages from './pages/admin/Messages';
 
 const App: React.FC = () => {
   return (
@@ -15,10 +14,9 @@ const App: React.FC = () => {
       <LandingLayout>
       <main className="flex-grow pt-navbar">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/kamar" element={<Kamar />} />
-          <Route path="/fasilitas" element={<Fasilitas />} />
-          <Route path="/kontak" element={<Kontak />} />
+        <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route path="/admin/settings" element={<Settings />} />
+          <Route path="/admin/messages" element={<Messages />} />
         </Routes>
        </main>
       </LandingLayout>

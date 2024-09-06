@@ -1,9 +1,8 @@
 // src/layouts/LandingLayout.tsx
 
 import React from 'react';
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import useWhatsAppLink from '../hooks/useWhatsAppLink';
+import Home from '../pages/landing/Home';
 
 interface LandingLayoutProps {
   children: React.ReactNode;
@@ -14,11 +13,10 @@ const LandingLayout: React.FC<LandingLayoutProps> = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Home />
       <main className="flex-grow">
         {children}
       </main>
-      <Footer />
       <button 
         onClick={() => openWhatsApp("Halo, saya tertarik dengan Aiza Homestay")}
         className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
